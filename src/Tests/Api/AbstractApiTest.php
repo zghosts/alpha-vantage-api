@@ -42,8 +42,9 @@ class AbstractApiTest extends TestCase
     public function testGetException()
     {
         $this->class->__construct($this->option);
-        $this->expectException(RuntimeException::class);
-        $this->expectExceptionMessage(
+
+        $this->setExpectedException(
+            RuntimeException::class,
             'The **demo** API key is for demo purposes only. Please claim your free API key at (https://www.alphavantage.co/support/#api-key) to explore our full API offerings. It takes fewer than 20 seconds, and we are committed to making it free forever.'
         );
 

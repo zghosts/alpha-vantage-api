@@ -16,8 +16,7 @@ class ClientTest extends TestCase
 
     public function testMagicCallException()
     {
-        $this->expectException(Exception\BadMethodCallException::class);
-        $this->expectExceptionMessage('Undefined method called: "performance2"');
+        $this->setExpectedException(Exception\BadMethodCallException::class, 'Undefined method called: "performance2"');
 
         $client = new Client(new Options());
         $client->performance2();
@@ -42,8 +41,7 @@ class ClientTest extends TestCase
 
     public function testApiException()
     {
-        $this->expectException(Exception\InvalidArgumentException::class);
-        $this->expectExceptionMessage('Undefined api instance called: "performance2"');
+        $this->setExpectedException(Exception\InvalidArgumentException::class, 'Undefined api instance called: "performance2"');
 
         $client = new Client(new Options());
         $client->api('performance2');
