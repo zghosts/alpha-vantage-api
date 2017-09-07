@@ -1,12 +1,12 @@
 <?php
 
-namespace AlphaVantageTest\Api;
+namespace AlphaVantage\Tests\Api;
 
 use AlphaVantage\Options;
 use ReflectionMethod;
 use ReflectionProperty;
 
-class TestCase extends \AlphaVantageTest\TestCase
+class TestCase extends \AlphaVantage\Tests\TestCase
 {
     /** @var  Options */
     protected $option;

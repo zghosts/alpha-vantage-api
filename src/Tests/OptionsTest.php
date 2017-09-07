@@ -1,6 +1,6 @@
 <?php
 
-namespace AlphaVantageTest;
+namespace AlphaVantage\Tests;
 
 use AlphaVantage\Options;
 
