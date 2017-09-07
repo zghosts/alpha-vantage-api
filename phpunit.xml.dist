@@ -13,7 +13,17 @@
     <testsuites>
         <testsuite name="AlphaVantageApi component test Suite">
             <directory suffix="Test.php">./src/Tests</directory>
+            <groups>
+                <exclude>integration</exclude>
+            </groups>
         </testsuite>
+        <testsuite name="AlphaVantageApi integration test Suite">
+            <directory suffix="Test.php">./src/Tests</directory>
+            <groups>
+                <include>integration</include>
+            </groups>
+        </testsuite>
+
     </testsuites>
     <filter>
         <whitelist>
