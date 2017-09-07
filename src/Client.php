@@ -32,7 +32,7 @@ class Client
      * @return Api\AbstractApi
      * @throws Exception\InvalidArgumentException
      */
-    public function api(string $name): Api\AbstractApi
+    public function api($name)
     {
         $name = $this->getApiName($name);
 
@@ -62,7 +62,7 @@ class Client
      *
      * @return Api\AbstractApi
      */
-    public function __call(string $name, array $arguments): Api\AbstractApi
+    public function __call($name, array $arguments)
     {
         try {
             return $this->api($name);
@@ -78,7 +78,7 @@ class Client
      *
      * @return string
      */
-    protected function getApiName(string $name): string
+    protected function getApiName($name)
     {
         return strtolower(str_replace(['_', ''], '', $name));
     }

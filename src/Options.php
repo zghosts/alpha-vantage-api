@@ -22,7 +22,7 @@ class Options
     /**
      * @return string
      */
-    public function getApiKey(): string
+    public function getApiKey()
     {
         return $this->apiKey;
     }
@@ -32,7 +32,7 @@ class Options
      *
      * @return self
      */
-    public function setApiKey(string $apiKey)
+    public function setApiKey($apiKey)
     {
         $this->apiKey = $apiKey;
 
@@ -42,7 +42,7 @@ class Options
     /**
      * @return string
      */
-    public function getApiUrl(): string
+    public function getApiUrl()
     {
         return $this->apiUrl;
     }
@@ -52,7 +52,7 @@ class Options
      *
      * @return self
      */
-    public function setApiUrl(string $apiUrl)
+    public function setApiUrl($apiUrl)
     {
         $this->apiUrl = $apiUrl;
 

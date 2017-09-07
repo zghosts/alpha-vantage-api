@@ -179,13 +179,13 @@ class Indicators extends AbstractApi
      * @return array
      */
     public function mama(
-        string $symbolName,
-        string $exchangeName,
-        string $interval,
-        int $timePeriod,
-        string $seriesType,
-        float $fastLimit = 0.01,
-        float $slowLimit = 0.01
+        $symbolName,
+        $exchangeName,
+        $interval,
+        $timePeriod,
+        $seriesType,
+        $fastLimit = 0.01,
+        $slowLimit = 0.01
     ) {
         return $this->get(
             'MAMA',
@@ -212,13 +212,13 @@ class Indicators extends AbstractApi
      * @return array
      */
     public function macd(
-        string $symbolName,
-        string $exchangeName,
-        string $interval,
-        string $seriesType,
-        int $fastPeriod = 12,
-        int $slowPeriod = 26,
-        int $signalPeriod = 9
+        $symbolName,
+        $exchangeName,
+        $interval,
+        $seriesType,
+        $fastPeriod = 12,
+        $slowPeriod = 26,
+        $signalPeriod = 9
     ) {
         return $this->get(
             'MACD',
@@ -249,16 +249,16 @@ class Indicators extends AbstractApi
      * @return array
      */
     public function macdext(
-        string $symbolName,
-        string $exchangeName,
-        string $interval,
-        string $seriesType,
-        int $fastPeriod = 12,
-        int $slowPeriod = 26,
-        int $signalPeriod = 9,
-        int $fastMaType = 0,
-        int $slowMaType = 0,
-        int $signalMaType = 0
+        $symbolName,
+        $exchangeName,
+        $interval,
+        $seriesType,
+        $fastPeriod = 12,
+        $slowPeriod = 26,
+        $signalPeriod = 9,
+        $fastMaType = 0,
+        $slowMaType = 0,
+        $signalMaType = 0
     ) {
         return $this->get(
             'MACDEXT',
@@ -289,14 +289,14 @@ class Indicators extends AbstractApi
      * @return array
      */
     public function stoch(
-        string $symbolName,
-        string $exchangeName,
-        string $interval,
-        int $fastKPeriod = 5,
-        int $slowKPeriod = 3,
-        int $slowDPeriod = 3,
-        int $slowKmaType = 0,
-        int $slowDmaType = 0
+        $symbolName,
+        $exchangeName,
+        $interval,
+        $fastKPeriod = 5,
+        $slowKPeriod = 3,
+        $slowDPeriod = 3,
+        $slowKmaType = 0,
+        $slowDmaType = 0
     ) {
         return $this->get(
             'STOCH',
@@ -323,12 +323,12 @@ class Indicators extends AbstractApi
      * @return array
      */
     public function stochf(
-        string $symbolName,
-        string $exchangeName,
-        string $interval,
-        int $fastKPeriod = 5,
-        int $fastDPeriod = 3,
-        int $fastDmaPeriod = 0
+        $symbolName,
+        $exchangeName,
+        $interval,
+        $fastKPeriod = 5,
+        $fastDPeriod = 3,
+        $fastDmaPeriod = 0
     ) {
         return $this->get(
             'STOCHF',
@@ -356,14 +356,14 @@ class Indicators extends AbstractApi
      * @return array
      */
     public function stochrsi(
-        string $symbolName,
-        string $exchangeName,
-        string $interval,
-        int $timePeriod,
-        string $seriesType,
-        int $fastKPeriod = 5,
-        int $fastDPeriod = 3,
-        int $fastDmaPeriod = 0
+        $symbolName,
+        $exchangeName,
+        $interval,
+        $timePeriod,
+        $seriesType,
+        $fastKPeriod = 5,
+        $fastDPeriod = 3,
+        $fastDmaPeriod = 0
     ) {
         return $this->get(
             'STOCHRSI',
@@ -392,13 +392,13 @@ class Indicators extends AbstractApi
      * @return array
      */
     public function apo(
-        string $symbolName,
-        string $exchangeName,
-        string $interval,
-        string $seriesType,
-        int $fastPeriod = 12,
-        int $slowPeriod = 26,
-        int $maType = 0
+        $symbolName,
+        $exchangeName,
+        $interval,
+        $seriesType,
+        $fastPeriod = 12,
+        $slowPeriod = 26,
+        $maType = 0
     ) {
         return $this->get(
             'APO',
@@ -426,13 +426,13 @@ class Indicators extends AbstractApi
      * @return array
      */
     public function ppo(
-        string $symbolName,
-        string $exchangeName,
-        string $interval,
-        string $seriesType,
-        int $fastPeriod = 12,
-        int $slowPeriod = 26,
-        int $maType = 0
+        $symbolName,
+        $exchangeName,
+        $interval,
+        $seriesType,
+        $fastPeriod = 12,
+        $slowPeriod = 26,
+        $maType = 0
     ) {
         return $this->get(
             'PPO',
@@ -459,12 +459,12 @@ class Indicators extends AbstractApi
      * @return array
      */
     public function ultosc(
-        string $symbolName,
-        string $exchangeName,
-        string $interval,
-        int $timePeriod1 = 7,
-        int $timePeriod2 = 14,
-        int $timePeriod3 = 28
+        $symbolName,
+        $exchangeName,
+        $interval,
+        $timePeriod1 = 7,
+        $timePeriod2 = 14,
+        $timePeriod3 = 28
     ) {
         return $this->get(
             'ULTOSC',
@@ -491,14 +491,14 @@ class Indicators extends AbstractApi
      * @return array
      */
     public function bbands(
-        string $symbolName,
-        string $exchangeName,
-        string $interval,
-        int $timePeriod,
-        string $seriesType,
-        int $nbdevup = 2,
-        int $nbdevdn = 2,
-        int $maType = 0
+        $symbolName,
+        $exchangeName,
+        $interval,
+        $timePeriod,
+        $seriesType,
+        $nbdevup = 2,
+        $nbdevdn = 2,
+        $maType = 0
     ) {
         return $this->get(
             'BBANDS',
@@ -524,11 +524,11 @@ class Indicators extends AbstractApi
      * @return array
      */
     public function sar(
-        string $symbolName,
-        string $exchangeName,
-        string $interval,
-        float $acceleration = 0.01,
-        float $maximum = 0.20
+        $symbolName,
+        $exchangeName,
+        $interval,
+        $acceleration = 0.01,
+        $maximum = 0.20
     ) {
         return $this->get(
             'SAR',
@@ -551,11 +551,11 @@ class Indicators extends AbstractApi
      * @return array
      */
     public function adosc(
-        string $symbolName,
-        string $exchangeName,
-        string $interval,
-        int $fastPeriod = 3,
-        int $slowPeriod = 10
+        $symbolName,
+        $exchangeName,
+        $interval,
+        $fastPeriod = 3,
+        $slowPeriod = 10
     ) {
         return $this->get(
             'ADOSC',
@@ -580,12 +580,12 @@ class Indicators extends AbstractApi
      * @return array
      */
     protected function basic(
-        string $name,
-        string $symbolName,
-        string $exchangeName,
-        string $interval,
-        int $timePeriod,
-        string $seriesType
+        $name,
+        $symbolName,
+        $exchangeName,
+        $interval,
+        $timePeriod,
+        $seriesType
     ) {
         return $this->get(
             strtoupper($name),
@@ -609,11 +609,11 @@ class Indicators extends AbstractApi
      * @return array
      */
     protected function basicTimePeriod(
-        string $name,
-        string $symbolName,
-        string $exchangeName,
-        string $interval,
-        int $timePeriod
+        $name,
+        $symbolName,
+        $exchangeName,
+        $interval,
+        $timePeriod
     ) {
         return $this->get(
             strtoupper($name),
@@ -636,11 +636,11 @@ class Indicators extends AbstractApi
      * @return array
      */
     protected function basicSeriesType(
-        string $name,
-        string $symbolName,
-        string $exchangeName,
-        string $interval,
-        string $seriesType
+        $name,
+        $symbolName,
+        $exchangeName,
+        $interval,
+        $seriesType
     ) {
         return $this->get(
             strtoupper($name),
@@ -662,10 +662,10 @@ class Indicators extends AbstractApi
      * @return array
      */
     protected function basicInterval(
-        string $name,
-        string $symbolName,
-        string $exchangeName,
-        string $interval
+        $name,
+        $symbolName,
+        $exchangeName,
+        $interval
     ) {
         return $this->get(
             strtoupper($name),
@@ -676,5 +676,4 @@ class Indicators extends AbstractApi
             ]
         );
     }
-
 }

@@ -37,9 +37,9 @@ class AbstractApi
      * @return array
      */
     protected function get(
-        string $functionName,
-        string $symbolName = null,
-        string $exchangeName = null,
+        $functionName,
+        $symbolName = null,
+        $exchangeName = null,
         array $params = []
     ) {
         unset($params['functions'], $params['functions'], $params['apikey']);
@@ -73,7 +73,7 @@ class AbstractApi
     /**
      * @return string
      */
-    protected function getApiUri(): string
+    protected function getApiUri()
     {
         return rtrim($this->options->getApiUrl(), '/') . '/query?';
     }
