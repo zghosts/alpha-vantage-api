@@ -11,13 +11,11 @@
     "homepage": "https://github.com/kokspflanze/alpha-vantage-api",
     "autoload": {
         "psr-4": {
-            "AlphaVantage\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "AlphaVantageTest\\": "tests/"
-        }
+            "AlphaVantage\\": "src"
+        },
+        "exclude-from-classmap": [
+            "src/Tests/"
+        ]
     },
     "require": {
         "php": "^7.0",
