@@ -4,6 +4,7 @@ namespace AlphaVantage;
 
 /**
  * Class Client
+ *
  * @package AlphaVantage
  *
  * @method Api\TimeSeries timeSeries
@@ -17,6 +18,7 @@ class Client
 
     /**
      * Client constructor.
+     *
      * @param Options $options
      */
     public function __construct(Options $options)
@@ -26,6 +28,7 @@ class Client
 
     /**
      * @param string $name
+     *
      * @return Api\AbstractApi
      * @throws Exception\InvalidArgumentException
      */
@@ -55,7 +58,8 @@ class Client
 
     /**
      * @param string $name
-     * @param array $arguments
+     * @param array  $arguments
+     *
      * @return Api\AbstractApi
      */
     public function __call(string $name, array $arguments): Api\AbstractApi
@@ -71,11 +75,11 @@ class Client
 
     /**
      * @param string $name
+     *
      * @return string
      */
     protected function getApiName(string $name): string
     {
         return strtolower(str_replace(['_', ''], '', $name));
     }
-
 }

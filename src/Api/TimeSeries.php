@@ -51,6 +51,8 @@ class TimeSeries extends AbstractApi
      * @param string $symbolName
      * @param string $exchangeName
      * @param string $outputType
+     * @param string $dataType
+     *
      * @return array
      */
     public function daily(
@@ -74,6 +76,8 @@ class TimeSeries extends AbstractApi
      * @param string $symbolName
      * @param string $exchangeName
      * @param string $outputType
+     * @param string $dataType
+     *
      * @return array
      */
     public function dailyAdjusted(
@@ -96,6 +100,8 @@ class TimeSeries extends AbstractApi
     /**
      * @param string $symbolName
      * @param string $exchangeName
+     * @param string $dataType
+     *
      * @return array
      */
     public function weekly(
@@ -116,6 +122,8 @@ class TimeSeries extends AbstractApi
     /**
      * @param string $symbolName
      * @param string $exchangeName
+     * @param string $dataType
+     *
      * @return array
      */
     public function monthly(

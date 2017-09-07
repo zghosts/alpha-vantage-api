@@ -238,9 +238,13 @@ class Indicators extends AbstractApi
      * @param string $exchangeName
      * @param string $interval
      * @param string $seriesType
-     * @param int $fastPeriod
-     * @param int $slowPeriod
-     * @param int $signalPeriod
+     * @param int    $fastPeriod
+     * @param int    $slowPeriod
+     * @param int    $signalPeriod
+     * @param int    $fastMaType
+     * @param int    $slowMaType
+     * @param int    $signalMaType
+     *
      * @return array
      */
     public function macdext(
@@ -342,9 +346,12 @@ class Indicators extends AbstractApi
      * @param string $symbolName
      * @param string $exchangeName
      * @param string $interval
-     * @param int $fastKPeriod
-     * @param int $fastDPeriod
-     * @param int $fastDmaPeriod
+     * @param int    $timePeriod
+     * @param string $seriesType
+     * @param int    $fastKPeriod
+     * @param int    $fastDPeriod
+     * @param int    $fastDmaPeriod
+     *
      * @return array
      */
     public function stochrsi(
@@ -376,9 +383,11 @@ class Indicators extends AbstractApi
      * @param string $symbolName
      * @param string $exchangeName
      * @param string $interval
-     * @param int $fastPeriod
-     * @param int $slowPeriod
-     * @param int $maType
+     * @param string $seriesType
+     * @param int    $fastPeriod
+     * @param int    $slowPeriod
+     * @param int    $maType
+     *
      * @return array
      */
     public function apo(
@@ -408,9 +417,11 @@ class Indicators extends AbstractApi
      * @param string $symbolName
      * @param string $exchangeName
      * @param string $interval
-     * @param int $fastPeriod
-     * @param int $slowPeriod
-     * @param int $maType
+     * @param string $seriesType
+     * @param int    $fastPeriod
+     * @param int    $slowPeriod
+     * @param int    $maType
+     *
      * @return array
      */
     public function ppo(
@@ -440,8 +451,10 @@ class Indicators extends AbstractApi
      * @param string $symbolName
      * @param string $exchangeName
      * @param string $interval
-     * @param int $timePeriod2
-     * @param int $timePeriod3
+     * @param int    $timePeriod1
+     * @param int    $timePeriod2
+     * @param int    $timePeriod3
+     *
      * @return array
      */
     public function ultosc(
@@ -556,11 +569,13 @@ class Indicators extends AbstractApi
     }
 
     /**
+     * @param string $name
      * @param string $symbolName
      * @param string $exchangeName
      * @param string $interval
-     * @param int $timePeriod
+     * @param int    $timePeriod
      * @param string $seriesType
+     *
      * @return array
      */
     protected function basic(
@@ -584,10 +599,12 @@ class Indicators extends AbstractApi
     }
 
     /**
+     * @param string $name
      * @param string $symbolName
      * @param string $exchangeName
      * @param string $interval
-     * @param int $timePeriod
+     * @param int    $timePeriod
+     *
      * @return array
      */
     protected function basicTimePeriod(
@@ -609,10 +626,12 @@ class Indicators extends AbstractApi
     }
 
     /**
+     * @param string $name
      * @param string $symbolName
      * @param string $exchangeName
      * @param string $interval
      * @param string $seriesType
+     *
      * @return array
      */
     protected function basicSeriesType(
@@ -634,9 +653,11 @@ class Indicators extends AbstractApi
     }
 
     /**
+     * @param string $name
      * @param string $symbolName
      * @param string $exchangeName
      * @param string $interval
+     *
      * @return array
      */
     protected function basicInterval(
