@@ -4,14 +4,19 @@ namespace AlphaVantage;
 
 /**
  * Class Options
+ *
  * @package AlphaVantage
  */
 class Options
 {
-    /** @var string */
+    /**
+     * @var string
+     */
     protected $apiKey = '';
 
-    /** @var string */
+    /**
+     * @var string
+     */
     protected $apiUrl = 'https://www.alphavantage.co/';
 
     /**
@@ -24,11 +29,13 @@ class Options
 
     /**
      * @param string $apiKey
+     *
      * @return self
      */
     public function setApiKey(string $apiKey)
     {
         $this->apiKey = $apiKey;
+
         return $this;
     }
 
@@ -42,12 +49,13 @@ class Options
 
     /**
      * @param string $apiUrl
+     *
      * @return self
      */
     public function setApiUrl(string $apiUrl)
     {
         $this->apiUrl = $apiUrl;
+
         return $this;
     }
-
 }
