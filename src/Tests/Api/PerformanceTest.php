@@ -8,6 +8,11 @@ class PerformanceTest extends TestCase
 {
     public function testGetGlobalQuote()
     {
+        $actual = (new Performance($this->option))->sector();
+
+        $this->assertNotEmpty($actual);
+        $this->assertInternalType('array', $actual);
+
         $actual = (new Performance($this->option))->section();
 
         $this->assertNotEmpty($actual);
