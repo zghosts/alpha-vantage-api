@@ -1,6 +1,6 @@
 <?php
 
-namespace AlphaVantageTest\Api;
+namespace AlphaVantage\Tests\Api;
 
 use AlphaVantage\Api\Performance;
 
