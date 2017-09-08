@@ -19,6 +19,11 @@ class AbstractApi
     protected $options;
 
     /**
+     * @var  Client
+     */
+    protected $client;
+
+    /**
      * AbstractApi constructor.
      *
      * @param Options $options
@@ -26,6 +31,7 @@ class AbstractApi
     public function __construct(Options $options)
     {
         $this->options = $options;
+        $this->client = new Client();
     }
 
     /**
@@ -58,8 +64,7 @@ class AbstractApi
             $params
         ));
 
-        $httpClient = new Client();
-        $response   = $httpClient->get($this->getApiUri() . $httpQuery);
+        $response = $this->client->get($this->getApiUri() . $httpQuery);
 
         $result = \GuzzleHttp\json_decode($response->getBody()->getContents(), true);
 
