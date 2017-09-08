@@ -37,13 +37,13 @@ class Client
         $name = $this->getApiName($name);
 
         switch ($name) {
-            case 'timeseries' :
+            case 'timeseries':
                 $api = new Api\TimeSeries($this->options);
                 break;
-            case 'indicators' :
+            case 'indicators':
                 $api = new Api\Indicators($this->options);
                 break;
-            case 'performance' :
+            case 'performance':
                 $api = new Api\Performance($this->options);
                 break;
 

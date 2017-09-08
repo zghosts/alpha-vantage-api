@@ -3,7 +3,6 @@
 namespace AlphaVantage\Tests\Api;
 
 use AlphaVantage\Api\Indicators;
-use AlphaVantage\Api\TimeSeries;
 
 class IndicatorsTest extends TestCase
 {
@@ -351,7 +350,6 @@ class IndicatorsTest extends TestCase
         $this->assertInternalType('array', $actual);
         $this->assertArrayHasKey('Meta Data', $actual);
         $this->assertArrayHasKey('Technical Analysis: ADXR', $actual);
-
     }
 
     /**
@@ -370,7 +368,6 @@ class IndicatorsTest extends TestCase
         $this->assertInternalType('array', $actual);
         $this->assertArrayHasKey('Meta Data', $actual);
         $this->assertArrayHasKey('Technical Analysis: CCI', $actual);
-
     }
 
     /**
@@ -389,7 +386,6 @@ class IndicatorsTest extends TestCase
         $this->assertInternalType('array', $actual);
         $this->assertArrayHasKey('Meta Data', $actual);
         $this->assertArrayHasKey('Technical Analysis: AROON', $actual);
-
     }
 
     /**
@@ -408,7 +404,6 @@ class IndicatorsTest extends TestCase
         $this->assertInternalType('array', $actual);
         $this->assertArrayHasKey('Meta Data', $actual);
         $this->assertArrayHasKey('Technical Analysis: AROONOSC', $actual);
-
     }
 
     /**
@@ -427,7 +422,6 @@ class IndicatorsTest extends TestCase
         $this->assertInternalType('array', $actual);
         $this->assertArrayHasKey('Meta Data', $actual);
         $this->assertArrayHasKey('Technical Analysis: MFI', $actual);
-
     }
 
     /**
@@ -446,7 +440,6 @@ class IndicatorsTest extends TestCase
         $this->assertInternalType('array', $actual);
         $this->assertArrayHasKey('Meta Data', $actual);
         $this->assertArrayHasKey('Technical Analysis: DX', $actual);
-
     }
 
     /**
@@ -465,7 +458,6 @@ class IndicatorsTest extends TestCase
         $this->assertInternalType('array', $actual);
         $this->assertArrayHasKey('Meta Data', $actual);
         $this->assertArrayHasKey('Technical Analysis: MIDPRICE', $actual);
-
     }
 
     /**
@@ -484,7 +476,6 @@ class IndicatorsTest extends TestCase
         $this->assertInternalType('array', $actual);
         $this->assertArrayHasKey('Meta Data', $actual);
         $this->assertArrayHasKey('Technical Analysis: ATR', $actual);
-
     }
 
     /**
@@ -503,7 +494,6 @@ class IndicatorsTest extends TestCase
         $this->assertInternalType('array', $actual);
         $this->assertArrayHasKey('Meta Data', $actual);
         $this->assertArrayHasKey('Technical Analysis: NATR', $actual);
-
     }
 
     /**
@@ -522,7 +512,6 @@ class IndicatorsTest extends TestCase
         $this->assertInternalType('array', $actual);
         $this->assertArrayHasKey('Meta Data', $actual);
         $this->assertArrayHasKey('Technical Analysis: MINUS_DI', $actual);
-
     }
 
     /**
@@ -541,7 +530,6 @@ class IndicatorsTest extends TestCase
         $this->assertInternalType('array', $actual);
         $this->assertArrayHasKey('Meta Data', $actual);
         $this->assertArrayHasKey('Technical Analysis: PLUS_DI', $actual);
-
     }
 
     /**
@@ -560,7 +548,6 @@ class IndicatorsTest extends TestCase
         $this->assertInternalType('array', $actual);
         $this->assertArrayHasKey('Meta Data', $actual);
         $this->assertArrayHasKey('Technical Analysis: MINUS_DM', $actual);
-
     }
 
     /**
@@ -579,7 +566,6 @@ class IndicatorsTest extends TestCase
         $this->assertInternalType('array', $actual);
         $this->assertArrayHasKey('Meta Data', $actual);
         $this->assertArrayHasKey('Technical Analysis: PLUS_DM', $actual);
-
     }
 
     /**
@@ -597,7 +583,6 @@ class IndicatorsTest extends TestCase
         $this->assertInternalType('array', $actual);
         $this->assertArrayHasKey('Meta Data', $actual);
         $this->assertArrayHasKey('Technical Analysis: BOP', $actual);
-
     }
 
     /**
@@ -615,7 +600,6 @@ class IndicatorsTest extends TestCase
         $this->assertInternalType('array', $actual);
         $this->assertArrayHasKey('Meta Data', $actual);
         $this->assertArrayHasKey('Technical Analysis: TRANGE', $actual);
-
     }
 
     /**
@@ -633,7 +617,6 @@ class IndicatorsTest extends TestCase
         $this->assertInternalType('array', $actual);
         $this->assertArrayHasKey('Meta Data', $actual);
         $this->assertArrayHasKey('Technical Analysis: Chaikin A/D', $actual);
-
     }
 
     /**
@@ -651,7 +634,6 @@ class IndicatorsTest extends TestCase
         $this->assertInternalType('array', $actual);
         $this->assertArrayHasKey('Meta Data', $actual);
         $this->assertArrayHasKey('Technical Analysis: OBV', $actual);
-
     }
 
     /**
@@ -665,13 +647,11 @@ class IndicatorsTest extends TestCase
                 $this->exchange,
                 Indicators::INTERVAL_15,
                 Indicators::INTERVAL_DAILY
-
             );
         $this->assertNotEmpty($actual);
         $this->assertInternalType('array', $actual);
         $this->assertArrayHasKey('Meta Data', $actual);
         $this->assertArrayHasKey('Technical Analysis: HT_TRENDLINE', $actual);
-
     }
 
     /**
@@ -685,13 +665,11 @@ class IndicatorsTest extends TestCase
                 $this->exchange,
                 Indicators::INTERVAL_15,
                 Indicators::INTERVAL_DAILY
-
             );
         $this->assertNotEmpty($actual);
         $this->assertInternalType('array', $actual);
         $this->assertArrayHasKey('Meta Data', $actual);
         $this->assertArrayHasKey('Technical Analysis: HT_SINE', $actual);
-
     }
 
     /**
@@ -705,13 +683,11 @@ class IndicatorsTest extends TestCase
                 $this->exchange,
                 Indicators::INTERVAL_15,
                 Indicators::INTERVAL_DAILY
-
             );
         $this->assertNotEmpty($actual);
         $this->assertInternalType('array', $actual);
         $this->assertArrayHasKey('Meta Data', $actual);
         $this->assertArrayHasKey('Technical Analysis: HT_TRENDMODE', $actual);
-
     }
 
     /**
@@ -725,13 +701,11 @@ class IndicatorsTest extends TestCase
                 $this->exchange,
                 Indicators::INTERVAL_15,
                 Indicators::INTERVAL_DAILY
-
             );
         $this->assertNotEmpty($actual);
         $this->assertInternalType('array', $actual);
         $this->assertArrayHasKey('Meta Data', $actual);
         $this->assertArrayHasKey('Technical Analysis: HT_DCPERIOD', $actual);
-
     }
 
     /**
@@ -745,13 +719,11 @@ class IndicatorsTest extends TestCase
                 $this->exchange,
                 Indicators::INTERVAL_15,
                 Indicators::INTERVAL_DAILY
-
             );
         $this->assertNotEmpty($actual);
         $this->assertInternalType('array', $actual);
         $this->assertArrayHasKey('Meta Data', $actual);
         $this->assertArrayHasKey('Technical Analysis: HT_PHASOR', $actual);
-
     }
 
     /**
@@ -765,12 +737,10 @@ class IndicatorsTest extends TestCase
                 $this->exchange,
                 Indicators::INTERVAL_15,
                 Indicators::INTERVAL_DAILY
-
             );
         $this->assertNotEmpty($actual);
         $this->assertInternalType('array', $actual);
         $this->assertArrayHasKey('Meta Data', $actual);
         $this->assertArrayHasKey('Technical Analysis: HT_DCPHASE', $actual);
-
     }
 }

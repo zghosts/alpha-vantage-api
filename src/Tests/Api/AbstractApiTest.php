@@ -17,7 +17,8 @@ class AbstractApiTest extends TestCase
     {
         parent::setUp();
         $this->class = $this->getMockForAbstractClass(
-            AbstractApi::class, [],
+            AbstractApi::class,
+            [],
             '',
             false,
             true,
@@ -97,8 +98,8 @@ class AbstractApiTest extends TestCase
             ->method('get')
             ->willReturn($response);
 
-        $this->expectException(RuntimeException::class);
-        $this->expectExceptionMessage(
+        $this->setExpectedException(
+            RuntimeException::class,
             'the parameter apikey is missing. Please claim your free API key on (https://www.alphavantage.co/support/#api-key). It should take less than 20 seconds, and is free permanently.'
         );
 
@@ -165,5 +166,4 @@ class AbstractApiTest extends TestCase
             $result
         );
     }
-
 }
