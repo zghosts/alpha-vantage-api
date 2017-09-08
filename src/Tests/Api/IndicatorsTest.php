@@ -24,7 +24,7 @@ class IndicatorsTest extends TestCase
                 $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
-                Indicators::INTERVAL_DAILY
+                Indicators::SERIES_TYPE_CLOSE
             );
         $this->assertNotEmpty($actual);
         $this->assertInternalType('array', $actual);
@@ -43,7 +43,7 @@ class IndicatorsTest extends TestCase
                 $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
-                Indicators::INTERVAL_DAILY
+                Indicators::SERIES_TYPE_CLOSE
             );
         $this->assertNotEmpty($actual);
         $this->assertInternalType('array', $actual);
@@ -62,7 +62,7 @@ class IndicatorsTest extends TestCase
                 $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
-                Indicators::INTERVAL_DAILY
+                Indicators::SERIES_TYPE_CLOSE
             );
         $this->assertNotEmpty($actual);
         $this->assertInternalType('array', $actual);
@@ -81,7 +81,7 @@ class IndicatorsTest extends TestCase
                 $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
-                Indicators::INTERVAL_DAILY
+                Indicators::SERIES_TYPE_CLOSE
             );
         $this->assertNotEmpty($actual);
         $this->assertInternalType('array', $actual);
@@ -100,7 +100,7 @@ class IndicatorsTest extends TestCase
                 $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
-                Indicators::INTERVAL_DAILY
+                Indicators::SERIES_TYPE_CLOSE
             );
         $this->assertNotEmpty($actual);
         $this->assertInternalType('array', $actual);
@@ -119,7 +119,7 @@ class IndicatorsTest extends TestCase
                 $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
-                Indicators::INTERVAL_DAILY
+                Indicators::SERIES_TYPE_CLOSE
             );
         $this->assertNotEmpty($actual);
         $this->assertInternalType('array', $actual);
@@ -138,7 +138,7 @@ class IndicatorsTest extends TestCase
                 $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
-                Indicators::INTERVAL_DAILY
+                Indicators::SERIES_TYPE_CLOSE
             );
         $this->assertNotEmpty($actual);
         $this->assertInternalType('array', $actual);
@@ -157,7 +157,7 @@ class IndicatorsTest extends TestCase
                 $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
-                Indicators::INTERVAL_DAILY
+                Indicators::SERIES_TYPE_CLOSE
             );
         $this->assertNotEmpty($actual);
         $this->assertInternalType('array', $actual);
@@ -176,7 +176,7 @@ class IndicatorsTest extends TestCase
                 $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
-                Indicators::INTERVAL_DAILY
+                Indicators::SERIES_TYPE_CLOSE
             );
         $this->assertNotEmpty($actual);
         $this->assertInternalType('array', $actual);
@@ -195,7 +195,7 @@ class IndicatorsTest extends TestCase
                 $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
-                Indicators::INTERVAL_DAILY
+                Indicators::SERIES_TYPE_CLOSE
             );
         $this->assertNotEmpty($actual);
         $this->assertInternalType('array', $actual);
@@ -214,7 +214,7 @@ class IndicatorsTest extends TestCase
                 $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
-                Indicators::INTERVAL_DAILY
+                Indicators::SERIES_TYPE_CLOSE
             );
         $this->assertNotEmpty($actual);
         $this->assertInternalType('array', $actual);
@@ -233,7 +233,7 @@ class IndicatorsTest extends TestCase
                 $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
-                Indicators::INTERVAL_DAILY
+                Indicators::SERIES_TYPE_CLOSE
             );
         $this->assertNotEmpty($actual);
         $this->assertInternalType('array', $actual);
@@ -252,7 +252,7 @@ class IndicatorsTest extends TestCase
                 $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
-                Indicators::INTERVAL_DAILY
+                Indicators::SERIES_TYPE_CLOSE
             );
         $this->assertNotEmpty($actual);
         $this->assertInternalType('array', $actual);
@@ -271,7 +271,7 @@ class IndicatorsTest extends TestCase
                 $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
-                Indicators::INTERVAL_DAILY
+                Indicators::SERIES_TYPE_CLOSE
             );
         $this->assertNotEmpty($actual);
         $this->assertInternalType('array', $actual);
@@ -290,7 +290,7 @@ class IndicatorsTest extends TestCase
                 $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
-                Indicators::INTERVAL_DAILY
+                Indicators::SERIES_TYPE_CLOSE
             );
         $this->assertNotEmpty($actual);
         $this->assertInternalType('array', $actual);
@@ -646,7 +646,7 @@ class IndicatorsTest extends TestCase
                 $this->symbol,
                 $this->exchange,
                 Indicators::INTERVAL_15,
-                Indicators::INTERVAL_DAILY
+                Indicators::SERIES_TYPE_CLOSE
             );
         $this->assertNotEmpty($actual);
         $this->assertInternalType('array', $actual);
@@ -664,7 +664,7 @@ class IndicatorsTest extends TestCase
                 $this->symbol,
                 $this->exchange,
                 Indicators::INTERVAL_15,
-                Indicators::INTERVAL_DAILY
+                Indicators::SERIES_TYPE_CLOSE
             );
         $this->assertNotEmpty($actual);
         $this->assertInternalType('array', $actual);
@@ -682,7 +682,7 @@ class IndicatorsTest extends TestCase
                 $this->symbol,
                 $this->exchange,
                 Indicators::INTERVAL_15,
-                Indicators::INTERVAL_DAILY
+                Indicators::SERIES_TYPE_CLOSE
             );
         $this->assertNotEmpty($actual);
         $this->assertInternalType('array', $actual);
@@ -700,7 +700,7 @@ class IndicatorsTest extends TestCase
                 $this->symbol,
                 $this->exchange,
                 Indicators::INTERVAL_15,
-                Indicators::INTERVAL_DAILY
+                Indicators::SERIES_TYPE_CLOSE
             );
         $this->assertNotEmpty($actual);
         $this->assertInternalType('array', $actual);
@@ -718,7 +718,7 @@ class IndicatorsTest extends TestCase
                 $this->symbol,
                 $this->exchange,
                 Indicators::INTERVAL_15,
-                Indicators::INTERVAL_DAILY
+                Indicators::SERIES_TYPE_CLOSE
             );
         $this->assertNotEmpty($actual);
         $this->assertInternalType('array', $actual);
@@ -736,7 +736,7 @@ class IndicatorsTest extends TestCase
                 $this->symbol,
                 $this->exchange,
                 Indicators::INTERVAL_15,
-                Indicators::INTERVAL_DAILY
+                Indicators::SERIES_TYPE_CLOSE
             );
         $this->assertNotEmpty($actual);
         $this->assertInternalType('array', $actual);
