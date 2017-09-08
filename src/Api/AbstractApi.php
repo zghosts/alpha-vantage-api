@@ -56,7 +56,11 @@ class AbstractApi
         ];
 
         if (null !== $symbolName) {
-            $basicData['symbol'] = sprintf('%s:%s', $exchangeName ?: 'NASDAQ', $symbolName);
+            if (!empty($exchangeName)) {
+                $basicData['symbol'] = sprintf('%s:%s', $exchangeName, $symbolName);
+            } else {
+                $basicData['symbol'] = sprintf('%s', $symbolName);
+            }
         }
 
         $httpQuery = http_build_query(array_merge(
