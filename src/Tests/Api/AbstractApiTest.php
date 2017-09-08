@@ -17,7 +17,8 @@ class AbstractApiTest extends TestCase
     {
         parent::setUp();
         $this->class = $this->getMockForAbstractClass(
-            AbstractApi::class, [],
+            AbstractApi::class,
+            [],
             '',
             false,
             true,
@@ -164,5 +165,4 @@ class AbstractApiTest extends TestCase
             $result
         );
     }
-
 }

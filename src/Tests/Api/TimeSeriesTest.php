@@ -1,8 +1,6 @@
 <?php
 
-
 namespace AlphaVantage\Tests\Api;
-
 
 use AlphaVantage\Api\TimeSeries;
 
@@ -48,7 +46,6 @@ class TimeSeriesTest extends TestCase
         $this->assertInternalType('array', $actual);
         $this->assertArrayHasKey('Meta Data', $actual);
         $this->assertArrayHasKey('Time Series (Daily)', $actual);
-
     }
 
     /**
@@ -67,7 +64,6 @@ class TimeSeriesTest extends TestCase
         $this->assertInternalType('array', $actual);
         $this->assertArrayHasKey('Meta Data', $actual);
         $this->assertArrayHasKey('Time Series (Daily)', $actual);
-
     }
 
     /**
@@ -84,7 +80,6 @@ class TimeSeriesTest extends TestCase
         $this->assertInternalType('array', $actual);
         $this->assertArrayHasKey('Meta Data', $actual);
         $this->assertArrayHasKey('Weekly Time Series', $actual);
-
     }
 
     /**
@@ -102,6 +97,5 @@ class TimeSeriesTest extends TestCase
         $this->assertInternalType('array', $actual);
         $this->assertArrayHasKey('Meta Data', $actual);
         $this->assertArrayHasKey('Monthly Time Series', $actual);
-
     }
 }
