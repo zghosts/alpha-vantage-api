@@ -1697,8 +1697,5 @@
     "platform": {
         "php": "^7.0"
     },
-    "platform-dev": [],
-    "platform-overrides": {
-        "php": "7.0"
-    }
+    "platform-dev": []
 }
