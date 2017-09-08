@@ -25,6 +25,6 @@
         "phpunit/phpunit": "^6.2.2"
     },
     "scripts": {
-        "test": "phpunit --configuration tests/phpunit.xml --colors=always"
+        "test": "phpunit --configuration phpunit.xml.dist --colors=always"
     }
 }
