@@ -21,7 +21,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->sma(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
                 Indicators::SERIES_TYPE_CLOSE
@@ -40,7 +39,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->ema(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
                 Indicators::SERIES_TYPE_CLOSE
@@ -59,7 +57,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->wma(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
                 Indicators::SERIES_TYPE_CLOSE
@@ -78,7 +75,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->dema(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
                 Indicators::SERIES_TYPE_CLOSE
@@ -97,7 +93,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->tema(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
                 Indicators::SERIES_TYPE_CLOSE
@@ -116,7 +111,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->trima(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
                 Indicators::SERIES_TYPE_CLOSE
@@ -135,7 +129,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->kama(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
                 Indicators::SERIES_TYPE_CLOSE
@@ -154,7 +147,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->t3(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
                 Indicators::SERIES_TYPE_CLOSE
@@ -173,7 +165,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->rsi(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
                 Indicators::SERIES_TYPE_CLOSE
@@ -192,7 +183,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->mom(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
                 Indicators::SERIES_TYPE_CLOSE
@@ -211,7 +201,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->cmo(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
                 Indicators::SERIES_TYPE_CLOSE
@@ -230,7 +219,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->roc(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
                 Indicators::SERIES_TYPE_CLOSE
@@ -249,7 +237,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->rocr(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
                 Indicators::SERIES_TYPE_CLOSE
@@ -268,7 +255,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->trix(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
                 Indicators::SERIES_TYPE_CLOSE
@@ -287,7 +273,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->midpoint(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10,
                 Indicators::SERIES_TYPE_CLOSE
@@ -306,7 +291,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->willr(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10
             );
@@ -324,7 +308,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->adx(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10
             );
@@ -342,7 +325,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->adxr(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10
             );
@@ -360,7 +342,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->cci(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10
             );
@@ -378,7 +359,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->aroon(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10
             );
@@ -396,7 +376,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->aroonosc(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10
             );
@@ -414,7 +393,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->mfi(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10
             );
@@ -432,7 +410,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->dx(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10
             );
@@ -450,7 +427,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->midprice(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10
             );
@@ -468,7 +444,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->atr(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10
             );
@@ -486,7 +461,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->natr(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10
             );
@@ -504,7 +478,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->minusDi(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10
             );
@@ -522,7 +495,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->plusDi(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10
             );
@@ -540,7 +512,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->minusDm(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10
             );
@@ -558,7 +529,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->plusDm(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 10
             );
@@ -576,7 +546,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->bop(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15
             );
         $this->assertNotEmpty($actual);
@@ -593,7 +562,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->trange(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15
             );
         $this->assertNotEmpty($actual);
@@ -610,7 +578,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->ad(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15
             );
         $this->assertNotEmpty($actual);
@@ -627,7 +594,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->obv(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15
             );
         $this->assertNotEmpty($actual);
@@ -644,7 +610,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->htTrendline(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 Indicators::SERIES_TYPE_CLOSE
             );
@@ -662,7 +627,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->htSine(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 Indicators::SERIES_TYPE_CLOSE
             );
@@ -680,7 +644,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->htTrendmode(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 Indicators::SERIES_TYPE_CLOSE
             );
@@ -698,7 +661,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->htDcPeriod(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 Indicators::SERIES_TYPE_CLOSE
             );
@@ -716,7 +678,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->htPhasor(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 Indicators::SERIES_TYPE_CLOSE
             );
@@ -734,7 +695,6 @@ class IndicatorsTest extends TestCase
         $actual = (new Indicators($this->option))
             ->htDcPhase(
                 $this->symbol,
-                $this->exchange,
                 Indicators::INTERVAL_15,
                 Indicators::SERIES_TYPE_CLOSE
             );
