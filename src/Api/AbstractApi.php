@@ -6,6 +6,12 @@ use AlphaVantage\Exception\RuntimeException;
 use AlphaVantage\Options;
 use GuzzleHttp\Client;
 
+use function GuzzleHttp\json_decode;
+use function http_build_query;
+use function sprintf;
+use function array_merge;
+use function rtrim;
+
 /**
  * Class AbstractApi
  *
@@ -13,9 +19,10 @@ use GuzzleHttp\Client;
  */
 class AbstractApi
 {
-    /**
-     * @var Options
-     */
+    const DATA_TYPE_JSON = 'json';
+    const DATA_TYPE_CSV = 'csv';
+
+    /** @var  Options */
     protected $options;
 
     /**
@@ -37,7 +44,6 @@ class AbstractApi
     /**
      * @param string $functionName
      * @param null|string $symbolName
-     * @param null|string $exchangeName
      * @param array $params
      *
      * @return array
@@ -45,32 +51,31 @@ class AbstractApi
     protected function get(
         $functionName,
         $symbolName = null,
-        $exchangeName = null,
         array $params = []
     ) {
         unset($params['functions'], $params['functions'], $params['apikey']);
 
         $basicData = [
             'function' => $functionName,
-            'apikey'   => $this->options->getApiKey(),
         ];
 
         if (null !== $symbolName) {
-            if (!empty($exchangeName)) {
-                $basicData['symbol'] = sprintf('%s:%s', $exchangeName, $symbolName);
-            } else {
-                $basicData['symbol'] = sprintf('%s', $symbolName);
-            }
+            $basicData['symbol'] = $symbolName;
         }
 
-        $httpQuery = http_build_query(array_merge(
-            $basicData,
-            $params
-        ));
+        $httpQuery = http_build_query(
+            array_merge(
+                $basicData,
+                $params,
+                [
+                    'apikey' => $this->options->getApiKey(),
+                ]
+            )
+        );
 
         $response = $this->client->get($this->getApiUri() . $httpQuery);
 
-        $result = \GuzzleHttp\json_decode($response->getBody()->getContents(), true);
+        $result = json_decode($response->getBody()->getContents(), true);
 
         if (isset($result['Error Message'])) {
             throw new RuntimeException($result['Error Message']);

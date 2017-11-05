@@ -8,46 +8,46 @@ use AlphaVantage\Exception\BadMethodCallException;
  * Class Indicators
  * @package AlphaVantage\Api
  *
- * @method array sma(string $symbolName, string $exchangeName, string $interval, int $timePeriod, string $seriesType)
- * @method array ema(string $symbolName, string $exchangeName, string $interval, int $timePeriod, string $seriesType)
- * @method array wma(string $symbolName, string $exchangeName, string $interval, int $timePeriod, string $seriesType)
- * @method array dema(string $symbolName, string $exchangeName, string $interval, int $timePeriod, string $seriesType)
- * @method array tema(string $symbolName, string $exchangeName, string $interval, int $timePeriod, string $seriesType)
- * @method array trima(string $symbolName, string $exchangeName, string $interval, int $timePeriod, string $seriesType)
- * @method array kama(string $symbolName, string $exchangeName, string $interval, int $timePeriod, string $seriesType)
- * @method array t3(string $symbolName, string $exchangeName, string $interval, int $timePeriod, string $seriesType)
- * @method array rsi(string $symbolName, string $exchangeName, string $interval, int $timePeriod, string $seriesType)
- * @method array mom(string $symbolName, string $exchangeName, string $interval, int $timePeriod, string $seriesType)
- * @method array cmo(string $symbolName, string $exchangeName, string $interval, int $timePeriod, string $seriesType)
- * @method array roc(string $symbolName, string $exchangeName, string $interval, int $timePeriod, string $seriesType)
- * @method array rocr(string $symbolName, string $exchangeName, string $interval, int $timePeriod, string $seriesType)
- * @method array trix(string $symbolName, string $exchangeName, string $interval, int $timePeriod, string $seriesType)
- * @method array midpoint(string $symbolName, string $exchangeName, string $interval, int $timePeriod, string $seriesType)
- * @method array willr(string $symbolName, string $exchangeName, string $interval, int $timePeriod)
- * @method array adx(string $symbolName, string $exchangeName, string $interval, int $timePeriod)
- * @method array adxr(string $symbolName, string $exchangeName, string $interval, int $timePeriod)
- * @method array cci(string $symbolName, string $exchangeName, string $interval, int $timePeriod)
- * @method array aroon(string $symbolName, string $exchangeName, string $interval, int $timePeriod)
- * @method array aroonosc(string $symbolName, string $exchangeName, string $interval, int $timePeriod)
- * @method array mfi(string $symbolName, string $exchangeName, string $interval, int $timePeriod)
- * @method array dx(string $symbolName, string $exchangeName, string $interval, int $timePeriod)
- * @method array minusDi(string $symbolName, string $exchangeName, string $interval, int $timePeriod)
- * @method array plusDi(string $symbolName, string $exchangeName, string $interval, int $timePeriod)
- * @method array minusDm(string $symbolName, string $exchangeName, string $interval, int $timePeriod)
- * @method array plusDm(string $symbolName, string $exchangeName, string $interval, int $timePeriod)
- * @method array midprice(string $symbolName, string $exchangeName, string $interval, int $timePeriod)
- * @method array atr(string $symbolName, string $exchangeName, string $interval, int $timePeriod)
- * @method array natr(string $symbolName, string $exchangeName, string $interval, int $timePeriod)
- * @method array bop(string $symbolName, string $exchangeName, string $interval)
- * @method array trange(string $symbolName, string $exchangeName, string $interval)
- * @method array ad(string $symbolName, string $exchangeName, string $interval)
- * @method array obv(string $symbolName, string $exchangeName, string $interval)
- * @method array htTrendline(string $symbolName, string $exchangeName, string $interval, string $seriesType)
- * @method array htSine(string $symbolName, string $exchangeName, string $interval, string $seriesType)
- * @method array htTrendmode(string $symbolName, string $exchangeName, string $interval, string $seriesType)
- * @method array htDcPeriod(string $symbolName, string $exchangeName, string $interval, string $seriesType)
- * @method array htDcPhase(string $symbolName, string $exchangeName, string $interval, string $seriesType)
- * @method array htPhasor(string $symbolName, string $exchangeName, string $interval, string $seriesType)
+ * @method array sma(string $symbolName, string $interval, int $timePeriod, string $seriesType)
+ * @method array ema(string $symbolName, string $interval, int $timePeriod, string $seriesType)
+ * @method array wma(string $symbolName, string $interval, int $timePeriod, string $seriesType)
+ * @method array dema(string $symbolName, string $interval, int $timePeriod, string $seriesType)
+ * @method array tema(string $symbolName, string $interval, int $timePeriod, string $seriesType)
+ * @method array trima(string $symbolName, string $interval, int $timePeriod, string $seriesType)
+ * @method array kama(string $symbolName, string $interval, int $timePeriod, string $seriesType)
+ * @method array t3(string $symbolName, string $interval, int $timePeriod, string $seriesType)
+ * @method array rsi(string $symbolName, string $interval, int $timePeriod, string $seriesType)
+ * @method array mom(string $symbolName, string $interval, int $timePeriod, string $seriesType)
+ * @method array cmo(string $symbolName, string $interval, int $timePeriod, string $seriesType)
+ * @method array roc(string $symbolName, string $interval, int $timePeriod, string $seriesType)
+ * @method array rocr(string $symbolName, string $interval, int $timePeriod, string $seriesType)
+ * @method array trix(string $symbolName, string $interval, int $timePeriod, string $seriesType)
+ * @method array midpoint(string $symbolName, string $interval, int $timePeriod, string $seriesType)
+ * @method array willr(string $symbolName, string $interval, int $timePeriod)
+ * @method array adx(string $symbolName, string $interval, int $timePeriod)
+ * @method array adxr(string $symbolName, string $interval, int $timePeriod)
+ * @method array cci(string $symbolName, string $interval, int $timePeriod)
+ * @method array aroon(string $symbolName, string $interval, int $timePeriod)
+ * @method array aroonosc(string $symbolName, string $interval, int $timePeriod)
+ * @method array mfi(string $symbolName, string $interval, int $timePeriod)
+ * @method array dx(string $symbolName, string $interval, int $timePeriod)
+ * @method array minusDi(string $symbolName, string $interval, int $timePeriod)
+ * @method array plusDi(string $symbolName, string $interval, int $timePeriod)
+ * @method array minusDm(string $symbolName, string $interval, int $timePeriod)
+ * @method array plusDm(string $symbolName, string $interval, int $timePeriod)
+ * @method array midprice(string $symbolName, string $interval, int $timePeriod)
+ * @method array atr(string $symbolName, string $interval, int $timePeriod)
+ * @method array natr(string $symbolName, string $interval, int $timePeriod)
+ * @method array bop(string $symbolName, string $interval)
+ * @method array trange(string $symbolName, string $interval)
+ * @method array ad(string $symbolName, string $interval)
+ * @method array obv(string $symbolName, string $interval)
+ * @method array htTrendline(string $symbolName, string $interval, string $seriesType)
+ * @method array htSine(string $symbolName, string $interval, string $seriesType)
+ * @method array htTrendmode(string $symbolName, string $interval, string $seriesType)
+ * @method array htDcPeriod(string $symbolName, string $interval, string $seriesType)
+ * @method array htDcPhase(string $symbolName, string $interval, string $seriesType)
+ * @method array htPhasor(string $symbolName, string $interval, string $seriesType)
  */
 class Indicators extends AbstractApi
 {
@@ -170,7 +170,6 @@ class Indicators extends AbstractApi
 
     /**
      * @param string $symbolName
-     * @param string $exchangeName
      * @param string $interval
      * @param int $timePeriod
      * @param string $seriesType
@@ -180,7 +179,6 @@ class Indicators extends AbstractApi
      */
     public function mama(
         $symbolName,
-        $exchangeName,
         $interval,
         $timePeriod,
         $seriesType,
@@ -190,7 +188,6 @@ class Indicators extends AbstractApi
         return $this->get(
             'MAMA',
             $symbolName,
-            $exchangeName,
             [
                 'interval' => $interval,
                 'time_period' => $timePeriod,
@@ -203,7 +200,6 @@ class Indicators extends AbstractApi
 
     /**
      * @param string $symbolName
-     * @param string $exchangeName
      * @param string $interval
      * @param string $seriesType
      * @param int $fastPeriod
@@ -213,7 +209,6 @@ class Indicators extends AbstractApi
      */
     public function macd(
         $symbolName,
-        $exchangeName,
         $interval,
         $seriesType,
         $fastPeriod = 12,
@@ -223,7 +218,6 @@ class Indicators extends AbstractApi
         return $this->get(
             'MACD',
             $symbolName,
-            $exchangeName,
             [
                 'interval' => $interval,
                 'series_type' => $seriesType,
@@ -236,7 +230,6 @@ class Indicators extends AbstractApi
 
     /**
      * @param string $symbolName
-     * @param string $exchangeName
      * @param string $interval
      * @param string $seriesType
      * @param int    $fastPeriod
@@ -250,7 +243,6 @@ class Indicators extends AbstractApi
      */
     public function macdext(
         $symbolName,
-        $exchangeName,
         $interval,
         $seriesType,
         $fastPeriod = 12,
@@ -263,7 +255,6 @@ class Indicators extends AbstractApi
         return $this->get(
             'MACDEXT',
             $symbolName,
-            $exchangeName,
             [
                 'interval' => $interval,
                 'series_type' => $seriesType,
@@ -279,7 +270,6 @@ class Indicators extends AbstractApi
 
     /**
      * @param string $symbolName
-     * @param string $exchangeName
      * @param string $interval
      * @param int $fastKPeriod
      * @param int $slowKPeriod
@@ -290,7 +280,6 @@ class Indicators extends AbstractApi
      */
     public function stoch(
         $symbolName,
-        $exchangeName,
         $interval,
         $fastKPeriod = 5,
         $slowKPeriod = 3,
@@ -301,7 +290,6 @@ class Indicators extends AbstractApi
         return $this->get(
             'STOCH',
             $symbolName,
-            $exchangeName,
             [
                 'interval' => $interval,
                 'fastkperiod' => $fastKPeriod,
@@ -315,7 +303,6 @@ class Indicators extends AbstractApi
 
     /**
      * @param string $symbolName
-     * @param string $exchangeName
      * @param string $interval
      * @param int $fastKPeriod
      * @param int $fastDPeriod
@@ -324,7 +311,6 @@ class Indicators extends AbstractApi
      */
     public function stochf(
         $symbolName,
-        $exchangeName,
         $interval,
         $fastKPeriod = 5,
         $fastDPeriod = 3,
@@ -333,7 +319,6 @@ class Indicators extends AbstractApi
         return $this->get(
             'STOCHF',
             $symbolName,
-            $exchangeName,
             [
                 'interval' => $interval,
                 'fastkperiod' => $fastKPeriod,
@@ -345,7 +330,6 @@ class Indicators extends AbstractApi
 
     /**
      * @param string $symbolName
-     * @param string $exchangeName
      * @param string $interval
      * @param int    $timePeriod
      * @param string $seriesType
@@ -357,7 +341,6 @@ class Indicators extends AbstractApi
      */
     public function stochrsi(
         $symbolName,
-        $exchangeName,
         $interval,
         $timePeriod,
         $seriesType,
@@ -368,7 +351,6 @@ class Indicators extends AbstractApi
         return $this->get(
             'STOCHRSI',
             $symbolName,
-            $exchangeName,
             [
                 'interval' => $interval,
                 'time_period' => $timePeriod,
@@ -382,7 +364,6 @@ class Indicators extends AbstractApi
 
     /**
      * @param string $symbolName
-     * @param string $exchangeName
      * @param string $interval
      * @param string $seriesType
      * @param int    $fastPeriod
@@ -393,7 +374,6 @@ class Indicators extends AbstractApi
      */
     public function apo(
         $symbolName,
-        $exchangeName,
         $interval,
         $seriesType,
         $fastPeriod = 12,
@@ -403,7 +383,6 @@ class Indicators extends AbstractApi
         return $this->get(
             'APO',
             $symbolName,
-            $exchangeName,
             [
                 'interval' => $interval,
                 'series_type' => $seriesType,
@@ -416,7 +395,6 @@ class Indicators extends AbstractApi
 
     /**
      * @param string $symbolName
-     * @param string $exchangeName
      * @param string $interval
      * @param string $seriesType
      * @param int    $fastPeriod
@@ -427,7 +405,6 @@ class Indicators extends AbstractApi
      */
     public function ppo(
         $symbolName,
-        $exchangeName,
         $interval,
         $seriesType,
         $fastPeriod = 12,
@@ -437,7 +414,6 @@ class Indicators extends AbstractApi
         return $this->get(
             'PPO',
             $symbolName,
-            $exchangeName,
             [
                 'interval' => $interval,
                 'series_type' => $seriesType,
@@ -450,7 +426,6 @@ class Indicators extends AbstractApi
 
     /**
      * @param string $symbolName
-     * @param string $exchangeName
      * @param string $interval
      * @param int    $timePeriod1
      * @param int    $timePeriod2
@@ -460,7 +435,6 @@ class Indicators extends AbstractApi
      */
     public function ultosc(
         $symbolName,
-        $exchangeName,
         $interval,
         $timePeriod1 = 7,
         $timePeriod2 = 14,
@@ -469,7 +443,6 @@ class Indicators extends AbstractApi
         return $this->get(
             'ULTOSC',
             $symbolName,
-            $exchangeName,
             [
                 'interval' => $interval,
                 'timeperiod1' => $timePeriod1,
@@ -481,7 +454,6 @@ class Indicators extends AbstractApi
 
     /**
      * @param string $symbolName
-     * @param string $exchangeName
      * @param string $interval
      * @param int $timePeriod
      * @param string $seriesType
@@ -492,7 +464,6 @@ class Indicators extends AbstractApi
      */
     public function bbands(
         $symbolName,
-        $exchangeName,
         $interval,
         $timePeriod,
         $seriesType,
@@ -503,7 +474,6 @@ class Indicators extends AbstractApi
         return $this->get(
             'BBANDS',
             $symbolName,
-            $exchangeName,
             [
                 'interval' => $interval,
                 'time_period' => $timePeriod,
@@ -517,7 +487,6 @@ class Indicators extends AbstractApi
 
     /**
      * @param string $symbolName
-     * @param string $exchangeName
      * @param string $interval
      * @param float $acceleration
      * @param float $maximum
@@ -525,7 +494,6 @@ class Indicators extends AbstractApi
      */
     public function sar(
         $symbolName,
-        $exchangeName,
         $interval,
         $acceleration = 0.01,
         $maximum = 0.20
@@ -533,7 +501,6 @@ class Indicators extends AbstractApi
         return $this->get(
             'SAR',
             $symbolName,
-            $exchangeName,
             [
                 'interval' => $interval,
                 'acceleration' => $acceleration,
@@ -544,7 +511,6 @@ class Indicators extends AbstractApi
 
     /**
      * @param string $symbolName
-     * @param string $exchangeName
      * @param string $interval
      * @param int $fastPeriod
      * @param int $slowPeriod
@@ -552,7 +518,6 @@ class Indicators extends AbstractApi
      */
     public function adosc(
         $symbolName,
-        $exchangeName,
         $interval,
         $fastPeriod = 3,
         $slowPeriod = 10
@@ -560,7 +525,6 @@ class Indicators extends AbstractApi
         return $this->get(
             'ADOSC',
             $symbolName,
-            $exchangeName,
             [
                 'interval' => $interval,
                 'fastperiod' => $fastPeriod,
@@ -572,7 +536,6 @@ class Indicators extends AbstractApi
     /**
      * @param string $name
      * @param string $symbolName
-     * @param string $exchangeName
      * @param string $interval
      * @param int    $timePeriod
      * @param string $seriesType
@@ -582,7 +545,6 @@ class Indicators extends AbstractApi
     protected function basic(
         $name,
         $symbolName,
-        $exchangeName,
         $interval,
         $timePeriod,
         $seriesType
@@ -590,7 +552,6 @@ class Indicators extends AbstractApi
         return $this->get(
             strtoupper($name),
             $symbolName,
-            $exchangeName,
             [
                 'interval' => $interval,
                 'time_period' => $timePeriod,
@@ -602,7 +563,6 @@ class Indicators extends AbstractApi
     /**
      * @param string $name
      * @param string $symbolName
-     * @param string $exchangeName
      * @param string $interval
      * @param int    $timePeriod
      *
@@ -611,14 +571,12 @@ class Indicators extends AbstractApi
     protected function basicTimePeriod(
         $name,
         $symbolName,
-        $exchangeName,
         $interval,
         $timePeriod
     ) {
         return $this->get(
             strtoupper($name),
             $symbolName,
-            $exchangeName,
             [
                 'interval' => $interval,
                 'time_period' => $timePeriod,
@@ -629,7 +587,6 @@ class Indicators extends AbstractApi
     /**
      * @param string $name
      * @param string $symbolName
-     * @param string $exchangeName
      * @param string $interval
      * @param string $seriesType
      *
@@ -638,14 +595,12 @@ class Indicators extends AbstractApi
     protected function basicSeriesType(
         $name,
         $symbolName,
-        $exchangeName,
         $interval,
         $seriesType
     ) {
         return $this->get(
             strtoupper($name),
             $symbolName,
-            $exchangeName,
             [
                 'interval' => $interval,
                 'series_type' => $seriesType,
@@ -656,7 +611,6 @@ class Indicators extends AbstractApi
     /**
      * @param string $name
      * @param string $symbolName
-     * @param string $exchangeName
      * @param string $interval
      *
      * @return array
@@ -664,13 +618,11 @@ class Indicators extends AbstractApi
     protected function basicInterval(
         $name,
         $symbolName,
-        $exchangeName,
         $interval
     ) {
         return $this->get(
             strtoupper($name),
             $symbolName,
-            $exchangeName,
             [
                 'interval' => $interval,
             ]

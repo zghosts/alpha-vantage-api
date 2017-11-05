@@ -21,7 +21,6 @@ class TimeSeriesTest extends TestCase
         $actual = (new TimeSeries($this->option))
             ->intraday(
                 $this->symbol,
-                $this->exchange,
                 TimeSeries::INTERVAL_1
             );
         $this->assertNotEmpty($actual);
@@ -38,7 +37,6 @@ class TimeSeriesTest extends TestCase
         $actual = (new TimeSeries($this->option))
             ->daily(
                 $this->symbol,
-                $this->exchange,
                 TimeSeries::OUTPUT_TYPE_COMPACT,
                 TimeSeries::DATA_TYPE_JSON
             );
@@ -56,7 +54,6 @@ class TimeSeriesTest extends TestCase
         $actual = (new TimeSeries($this->option))
             ->dailyAdjusted(
                 $this->symbol,
-                $this->exchange,
                 TimeSeries::OUTPUT_TYPE_COMPACT,
                 TimeSeries::DATA_TYPE_JSON
             );
@@ -73,7 +70,6 @@ class TimeSeriesTest extends TestCase
     {
         $actual = (new TimeSeries($this->option))->weekly(
             $this->symbol,
-            $this->exchange,
             TimeSeries::DATA_TYPE_JSON
         );
         $this->assertNotEmpty($actual);
@@ -90,7 +86,6 @@ class TimeSeriesTest extends TestCase
         $actual = (new TimeSeries($this->option))
             ->monthly(
                 $this->symbol,
-                $this->exchange,
                 TimeSeries::DATA_TYPE_JSON
             );
         $this->assertNotEmpty($actual);
